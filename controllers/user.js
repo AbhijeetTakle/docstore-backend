@@ -81,7 +81,8 @@ const addDocument = async (req, res) => {
       fileId: fileId,
       requestBody: {
         role: "reader",
-        type: "anyone",
+        type: "user",
+        emailAddress: email,
       },
     });
 
